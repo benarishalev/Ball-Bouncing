@@ -24,8 +24,11 @@ class Global {
         static Point mousePosition;
 
         static SDL_Texture* ballTexture;
+        static SDL_Texture* bigBallTexture;
+        static Point center;
         static int bigBallSize;
         static float g;
+        static float forceStrength;
 
     static void init(int width, int height);
     static void quit();
@@ -37,6 +40,8 @@ class Global {
     // all
     static void setMousePosition();
     static float getDistance(Point a, Point b);
+    static float getAngle(Point a, Point b);
+    static void drawBigBall();
 };
 
 #endif

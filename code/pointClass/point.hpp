@@ -9,6 +9,8 @@ class Point {
     Point(float x, float y);
     Point();
     bool operator==(const Point& other);
+    Point& operator+=(const Point& other);
+    Point& operator*=(const float other);
 };
 
 #endif

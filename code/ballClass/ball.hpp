@@ -10,7 +10,7 @@ class Ball {
         Point velocity;
         float mass;
 
-    Ball();
+    Ball(Point pos);
 
     void Draw();
     void Update();

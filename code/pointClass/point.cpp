@@ -16,3 +16,15 @@ bool Point::operator==(const Point& other) {
     }
     return false;
 }
+
+Point& Point::operator+=(const Point& other) {
+    x += other.x;
+    y += other.y;
+    return *this;
+}
+
+Point& Point::operator*=(const float other) {
+    x *= other;
+    y *= other;
+    return *this;
+}
